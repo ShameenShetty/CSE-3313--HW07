@@ -48,7 +48,9 @@ Touch tone phones generate dual-tone multifrequency (DTMF) signals. The numbers 
 </table>
 
 
-
+<tr>
+<td style="width: 276px;" colspan="4" align="center">&nbsp;DTMF Frequencies</td>
+</tr>
 | Frequencies | 1209 Hz | 1336 Hz | 1477 Hz | 
 |-------------|---------|---------|---------|
 | 697 Hz      | 1       | 2       | 3       |
