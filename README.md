@@ -9,10 +9,10 @@ in a signal. Also learn to apply bandpass filters
 Touch tone phones generate dual-tone multifrequency (DTMF) signals. The numbers of a standard keypad can be seen in table 1. When a button on the keypad is pressed, a signal is sent that is the combination of the row frequency and column frequency. For example, when we press ‘8’ a signal composed of 852 Hz and 1336 Hz frequencies is produced.  
 
 
-<table style="width: 285px;" border="1">
+<table>
 <tbody>
 <tr>
-<td style="width: 276px;" colspan="4" align="center">&nbsp;DTMF Frequencies</td>
+<td colspan="4" align="center">&nbsp;DTMF Frequencies</td>
 </tr>
 <tr align="center">
 <td style="width: 89px;">Frequencies</td>
@@ -48,9 +48,6 @@ Touch tone phones generate dual-tone multifrequency (DTMF) signals. The numbers 
 </table>
 
 
-<tr>
-<td style="width: 276px;" colspan="4" align="center">&nbsp;DTMF Frequencies</td>
-</tr>
 | Frequencies | 1209 Hz | 1336 Hz | 1477 Hz | 
 |-------------|---------|---------|---------|
 | 697 Hz      | 1       | 2       | 3       |
