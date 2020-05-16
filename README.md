@@ -46,8 +46,6 @@ Touch tone phones generate dual-tone multifrequency (DTMF) signals. The numbers 
 </tr>
 </tbody>
 </table>
-<!-- DivTable.com -->
-<p>&nbsp;</p>  
 
 
 
