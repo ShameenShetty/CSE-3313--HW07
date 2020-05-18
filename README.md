@@ -57,6 +57,7 @@ frequencies are present in the signal.
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" title="h[n] = \frac{2}{L}cos(\frac{2\pi f_b n}{f_s}), 0 \leq n < L" /></a>   
 
-where f<sub>b</sub> is the frequency that the bandpass  is designed to pass and f<sub>s</sub> is the sampling frequency. 
+where f<sub>b</sub> is the frequency that the bandpass  is designed to pass and f<sub>s</sub> is the sampling frequency.  
+![](https://github.com/ShameenShetty/CSE-3313--HW07/blob/master/Frequency%20Responses%20of%20Bandpass%20Filters.png)
 
 * To determine the frequencies present in a particular tone, determine which of the 7 filters have the highest values for `np.mean(y**2)` where y is the output of the filter. For example, if the first 4000 values have a tone composed of a 697 Hz signal and a 1477 Hz signal, then the bandpass filters for those two frequencies should produce output signals with much higher mean values than the other filters.
