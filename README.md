@@ -55,5 +55,8 @@ frequencies are present in the signal.
 * The sampling rate is f<sub>s</sub> = 8000 Hz. However, each tone is only generated for half a second and therefore represents 4000 samples of the overall signal. The length of the signal will be a multiple of 4000.
 * Filter length is L = 64. The filter coefficients are produced using 
 
-<a href="https://www.codecogs.com/eqnedit.php?latex=h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" title="h[n] = \frac{2}{L}cos(\frac{2\pi f_b n}{f_s}), 0 \leq n < L" /></a> 
+<a href="https://www.codecogs.com/eqnedit.php?latex=h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" title="h[n] = \frac{2}{L}cos(\frac{2\pi f_b n}{f_s}), 0 \leq n < L" /></a>   
 
+where f<sub>b</sub> is the frequency that the bandpass  is designed to pass and f<sub>s</sub> is the sampling frequency. 
+
+* To determine the frequencies present in a particular tone, determine which of the 7 filters have the highest values for `np.mean(y**2)` where y is the output of the filter. For example, if the first 4000 values have a tone composed of a 697 Hz signal and a 1477 Hz signal, then the bandpass filters for those two frequencies should produce output signals with much higher mean values than the other filters.
