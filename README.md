@@ -1,5 +1,6 @@
 # CSE-3313--HW07
-This is the coding assignment for Homework 7 for CSE3313 (Introduction to Signal Processing).
+This is the coding assignment for Homework 7 for CSE3313 (Introduction to Signal Processing).  
+NOTE: Still incomplete
 
 ## Purpose
 Learn how to produce a filter bank to detect which of several frequencies are present
