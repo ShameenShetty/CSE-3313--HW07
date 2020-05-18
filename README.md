@@ -47,3 +47,13 @@ Touch tone phones generate dual-tone multifrequency (DTMF) signals. The numbers 
 </tbody>
 </table>
 
+So, in order to determine which button has been pressed, we use a **filter bank**. A filter bank is a set of bandpass filters, with one for each of the frequencies that you wish to detect. The idea is that the filter for frequency f<sub>k</sub> passes the f<sub>k</sub> component relatively unchanged while the other frequencies are attenuated. Checking the output of each filter allows us to determine which of these
+frequencies are present in the signal.  
+
+* We read from the csv file *tones.csv* which contains the tones (as a set of numbers in csv format).
+* The output will be the phone number that the tones represent
+* The sampling rate is f<sub>s</sub> = 8000 Hz. However, each tone is only generated for half a second and therefore represents 4000 samples of the overall signal. The length of the signal will be a multiple of 4000.
+* Filter length is L = 64. The filter coefficients are produced using 
+
+<a href="https://www.codecogs.com/eqnedit.php?latex=h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" target="_blank"><img src="https://latex.codecogs.com/gif.latex?h[n]&space;=&space;\frac{2}{L}cos(\frac{2\pi&space;f_b&space;n}{f_s}),&space;0&space;\leq&space;n&space;<&space;L" title="h[n] = \frac{2}{L}cos(\frac{2\pi f_b n}{f_s}), 0 \leq n < L" /></a> 
+
